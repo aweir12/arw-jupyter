@@ -1,0 +1,5 @@
+cx_oracle
+numpy
+pandas
+requests
+nbstripout
