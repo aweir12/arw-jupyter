@@ -27,5 +27,7 @@ I'm notorious for losing my code, and working on "side projects" that inevitably
 <h4>Create Global .gitignore</h4>
 Since aiming to quickly check-in code on the fly, I've created a global .gitignore to keep unwanted installs and/or secrets from being committed to the repository.
 
-
+<h2>Installation & Configuration<h2>
+<h5>Step 1: Pull Base Docker Image</h5>
+Markup : docker pull jupyter/minimal-notebook:latest
 
