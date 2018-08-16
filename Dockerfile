@@ -1,13 +1,11 @@
 FROM jupyter/minimal-notebook:latest
 
 USER root
+# Install Updates and Grab Oracle Client Prerequisites
 RUN apt-get update && apt-get install -y apt-utils libaio1 ssh
 
-#CMD git clone git://github.com/aweir12/${REPO} && cd $HOME/work/${REPO} && git remote set-url origin git@github.com:aweir12/${REPO}.git && /bin/bash
-#CMD git clone git://github.com/aweir12/${REPO} && cd $HOME/work/${REPO} && git remote set-url origin git@github.com:aweir12/${REPO}.git && nbstipout --install --atributes .gitattributes && /usr/local/bin/start-notebook.sh
 
 USER jovyan
-
 # Copy Config Directory Used for Setup
 COPY --chown=jovyan:users config $HOME/config
 
@@ -35,7 +33,6 @@ ENV STATUS=clone
 ENV REPO=test-repo
 WORKDIR /home/jovyan/work
 RUN chmod 700 $HOME/config/configure.sh
-CMD $HOME/config/configure.sh && /bin/bash
 
-
-#CMD /bin/bash
+# Execute on Startup!
+CMD $HOME/config/configure.sh && && /usr/local/bin/start-notebook.sh
