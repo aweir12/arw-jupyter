@@ -5,10 +5,10 @@ Jupypter Notebook for Development Purposes
 This repository contains all the necessary code to create a Docker image for Python development using Jupyter Notebook. The image is based on jupyter/minimal-notebook:latest.
 
 <h2>Features</h2>
-<h3>Why these features</h3>
+<h4>Why these features</h4>
 These are my personal preferences for Python development in Jupyter Notebook.
 
-<h3>Remove Jupyter Notebook Output Before Commiting Changes</h3>
+<h4>Remove Jupyter Notebook Output Before Commiting Changes</h4>
 Using nbstripout (https://github.com/kynan/nbstripout) the container always removes Jupyter Notebook output prior to commiting any changes.
 
 <h3>Auto Export Jupyter Notebooks as .py's</h3>
