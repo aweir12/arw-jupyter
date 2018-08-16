@@ -12,7 +12,9 @@ fi
 
 if [ $STATUS == "scratch" ]; then
  echo "#### Not Saving Code To A Repository!!! ####"
-fi
+ cd $HOME/work
+ mkdir $REPO
+ fi
 
 if [ $STATUS == "new" ]; then
  echo "Creating New Repository:" $REPO

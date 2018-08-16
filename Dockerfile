@@ -31,12 +31,10 @@ RUN cat $HOME/config/jupyter-hook.py >> $HOME/.jupyter/jupyter_notebook_config.p
 RUN pip install --upgrade pip && pip install -r $HOME/config/requirements.txt && rm $HOME/config/requirements.txt
 
 # Last Couple Steps (see .sh script for documentation)
-ENV STATUS=new
-ENV REPO=jessica
+ENV STATUS=scratch
+ENV REPO=scratch
 WORKDIR /home/jovyan/work
 RUN chmod 700 $HOME/config/configure.sh
 
 # Execute on Startup!
-CMD $HOME/config/configure.sh && /bin/bash
-
-# /usr/local/bin/start-notebook.sh
+CMD $HOME/config/configure.sh && cd $HOME/work/${REPO} && /usr/local/bin/start-notebook.sh
