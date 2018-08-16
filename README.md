@@ -37,7 +37,7 @@ docker pull jupyter/minimal-notebook:latest
 
 <h5>Step 2: Setup Prerequisites</h5>
 * Create bin directory in the arw-jupyter/ directory.
-``` 
+```
 mkdir bin 
 ```
 
