@@ -60,5 +60,8 @@ mkdir bin
 
 <h4>Pull an Existing Repo</h4>
 
-``` docker run -e "REPO=test-repo" "STATUS=clone" --rm -p 8888:8888 -it arw/jupyter:latest ```
+``` docker run -e REPO='test-repo' -e STATUS='clone' --rm -p 8888:8888 -it arw/jupyter:latest ```
 
+<h4>Creating a New Repo</h4>
+
+``` docker run -e REPO='my-new-repo' -e STATUS='new' --rm -p 8888:8888 -it arw/jupyter:latest ```
