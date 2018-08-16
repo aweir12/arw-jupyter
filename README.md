@@ -44,9 +44,12 @@ mkdir bin
 ```
 
 * SSH Key and Personal Access Token
- * Your personal access token for GitHub needs to be the ONLY line in the file bin/api-token.txt
- * Your SSH Key needs to be located at /bin/id_rsa
+  - Your personal access token for GitHub needs to be the ONLY line in the file bin/api-token.txt
+  - Your SSH Key needs to be located at /bin/id_rsa
 
 * Oracle Client
+ - The Oracle Client needs to be instantclient-basic-linux.x64-18.3.0.0.0dbru.zip
+ - The .zip needs to be located at /bin/instantclient-basic-linux.x64-18.3.0.0.0dbru.zip
+
 
 
