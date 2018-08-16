@@ -4,6 +4,7 @@ Jupypter Notebook for Development Purposes
 <h2>About This Repository</h2>
 This repository contains all the necessary code to create a Docker image for Python development using Jupyter Notebook. The image is based on jupyter/minimal-notebook:latest.
 
+
 <h2>Features</h2>
 <h4>Why these features</h4>
 These are my personal preferences for Python development in Jupyter Notebook.
@@ -27,7 +28,13 @@ I'm notorious for losing my code, and working on "side projects" that inevitably
 <h4>Create Global .gitignore</h4>
 Since aiming to quickly check-in code on the fly, I've created a global .gitignore to keep unwanted installs and/or secrets from being committed to the repository.
 
+
 <h2>Installation & Configuration<h2>
 <h5>Step 1: Pull Base Docker Image</h5>
 Markup : docker pull jupyter/minimal-notebook:latest
+
+<h5>Step 2: Setup Prerequisites</h5>
+* Create bin directory in the arw-jupyter/ directory.
+Markup : mkdir bin
+
 
