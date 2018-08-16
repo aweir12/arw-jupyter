@@ -65,3 +65,7 @@ mkdir bin
 <h4>Creating a New Repo</h4>
 
 ``` docker run -e REPO='my-new-repo' -e STATUS='new' --rm -p 8888:8888 -it arw/jupyter:latest ```
+
+<h4>Scratch Notebook</h4>
+
+``` docker run --rm -it arw/jupyter:latest ```
