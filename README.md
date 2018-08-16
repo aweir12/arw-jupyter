@@ -48,11 +48,17 @@ mkdir bin
   - Your SSH Key needs to be located at /bin/id_rsa
 
 * Oracle Client
- - The Oracle Client needs to be instantclient-basic-linux.x64-18.3.0.0.0dbru.zip
- - The .zip needs to be located at /bin/instantclient-basic-linux.x64-18.3.0.0.0dbru.zip
+  - The Oracle Client needs to be instantclient-basic-linux.x64-18.3.0.0.0dbru.zip
+  - The .zip needs to be located at /bin/instantclient-basic-linux.x64-18.3.0.0.0dbru.zip
 
 * Build the Image
- - In the arw-jupyter execute the following:
+  - In the arw-jupyter execute the following:
  
 ``` docker build -t arw/jupyter:latest . ```
+
+<h2>Using the Image</h2>
+
+<h4>Pull an Existing Repo</h4>
+
+``` docker run -e "REPO=test-repo" "STATUS=clone" --rm -p 8888:8888 -it arw/jupyter:latest ```
 
