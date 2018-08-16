@@ -38,8 +38,15 @@ docker pull jupyter/minimal-notebook:latest
 
 <h5>Step 2: Setup Prerequisites</h5>
 * Create bin directory in the arw-jupyter/ directory.
+
 ```
 mkdir bin 
 ```
+
+* SSH Key and Personal Access Token
+ * Your personal access token for GitHub needs to be the ONLY line in the file bin/api-token.txt
+ * Your SSH Key needs to be located at /bin/id_rsa
+
+* Oracle Client
 
 
