@@ -31,6 +31,7 @@ Since aiming to quickly check-in code on the fly, I've created a global .gitigno
 
 <h2>Installation & Configuration<h2>
 <h5>Step 1: Pull Base Docker Image</h5>
+
 ```
 docker pull jupyter/minimal-notebook:latest 
 ```
