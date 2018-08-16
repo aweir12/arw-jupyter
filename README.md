@@ -51,5 +51,8 @@ mkdir bin
  - The Oracle Client needs to be instantclient-basic-linux.x64-18.3.0.0.0dbru.zip
  - The .zip needs to be located at /bin/instantclient-basic-linux.x64-18.3.0.0.0dbru.zip
 
-
+* Build the Image
+ - In the arw-jupyter execute the following:
+ 
+``` docker build -t arw/jupyter:latest . ```
 
