@@ -31,10 +31,10 @@ Since aiming to quickly check-in code on the fly, I've created a global .gitigno
 
 <h2>Installation & Configuration<h2>
 <h5>Step 1: Pull Base Docker Image</h5>
-Markup : docker pull jupyter/minimal-notebook:latest
+```python docker pull jupyter/minimal-notebook:latest ```
 
 <h5>Step 2: Setup Prerequisites</h5>
 * Create bin directory in the arw-jupyter/ directory.
-Markup : mkdir bin
+```python mkdir bin ```
 
 
