@@ -41,3 +41,4 @@ Thumbs.db
 .pyc
 params.py
 bin/
+__pycache__
